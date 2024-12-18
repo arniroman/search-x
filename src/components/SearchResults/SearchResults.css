@@ -1,0 +1,26 @@
+.search-results {
+	list-style: none;
+	margin-top: 20px;
+}
+
+.search-results li {
+	margin: 10px 0;
+	text-align: left;
+}
+
+.search-results li a {
+	color: #1a0dab;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.search-results li p {
+	font-size: 14px;
+	color: #4d5156;
+	margin-top: 4px;
+}
+
+.search-results li a:hover {
+	text-decoration: underline;
+}
