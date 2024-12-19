@@ -6,6 +6,10 @@ interface SearchContextType {
   removeFromHistory: (item: string) => void;
 }
 
+interface SearchProviderProps {
+  children: React.ReactNode;
+}
+
 const defaultValue: SearchContextType = {
   searchHistory: [],
   addToHistory: () => {},
@@ -14,9 +18,7 @@ const defaultValue: SearchContextType = {
 
 const SearchContext = createContext<SearchContextType>(defaultValue);
 
-export const SearchProvider: React.FC<{ children: React.ReactNode }> = ({
-  children,
-}) => {
+export const SearchProvider = ({ children }: SearchProviderProps) => {
   const [searchHistory, setSearchHistory] = useState<string[]>([]);
 
   const addToHistory = (item: string) => {

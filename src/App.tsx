@@ -1,8 +1,7 @@
-import React from "react";
 import { SearchProvider } from "./context/SearchContext";
 import { SearchContainer } from "./components/SearchContainer/SearchContainer";
 
-export const App: React.FC = () => {
+export const App = () => {
   return (
     <SearchProvider>
       <SearchContainer />
